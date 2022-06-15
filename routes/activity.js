@@ -85,17 +85,17 @@ exports.execute = function (req, res) {
       console.log("textoMensagem", textoMensagem);
 
       const headers = {
-        "Content-Type": "application/json",
-        Authorization: `Key ${process.env.BLIPAUTHORIZATIONKEY}`,
+        'Content-Type': 'application/json',
+        'Authorization': `Key ${process.env.BLIPAUTHORIZATIONKEY}`,
       };
 
       const guid_id = uuidv4();
 
       const post_save = {
-        id: guid_id,
-        to: "postmaster@wa.gw.msging.net",
-        method: "get",
-        uri: "https://eo4jvgnrnv0j9yz.m.pipedream.net",
+        "id": guid_id,
+        "to": "postmaster@wa.gw.msging.net",
+        "method": "get",
+        "uri": "https://eo4jvgnrnv0j9yz.m.pipedream.net",
       };
 
       axios
@@ -105,19 +105,19 @@ exports.execute = function (req, res) {
         .then((res) => {
           /*'https://msging.net/commands', post_save, { headers: headers }).then((res) => {*/
           const post_hsm = {
-            id: guid_id,
-            to: `${lalongcode}@wa.gw.msging.net`,
-            type: "application/json",
-            content: {
-              type: "hsm",
-              hsm: {
-                namespace: "0cf88f37_b88f_d3bd_b5be_f22588aabf89",
-                element_name: campanha,
-                language: {
-                  policy: "deterministic",
-                  code: "pt_BR",
+            "id": guid_id,
+            "to": `${lalongcode}@wa.gw.msging.net`,
+            "type": "application/json",
+            "content": {
+              "type": "hsm",
+              "hsm": {
+                "namespace": "0cf88f37_b88f_d3bd_b5be_f22588aabf89",
+                "element_name": campanha,
+                "language": {
+                  "policy": "deterministic",
+                  "code": "pt_BR",
                 },
-                localizable_params: perfilEnvio,
+                "localizable_params": perfilEnvio,
               },
             },
           };
