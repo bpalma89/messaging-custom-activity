@@ -20,7 +20,7 @@
     "execute": {
       "inArguments": [],
       "outArguments": [],
-      "url": "https://messaging-custom-activity.herokuapp.com/journeybuilder/execute",
+      "url": "https://eo4jvgnrnv0j9yz.m.pipedream.net/execute",
       "verb": "POST",
       "body": "",
       "header": "",
