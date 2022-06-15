@@ -8,12 +8,12 @@
   "type": "REST",
   "lang": {
     "en-US": {
-      "name": "Send Whatsapp HSM DEV",
-      "description": "HSM template submission via WhatsApp."
+      "name": "DEV - SMS Custom Activity",
+      "description": "Custom Activity for Sending SMS."
     },
     "pt-BR": {
-      "name": "Send Whatsapp HSM DEV",
-      "description": "Envio de template HSM via WhatsApp."
+      "name": "DEV - SMS Custom Activity",
+      "description": "Custom Activity de envio de SMS."
     }
   },
   "arguments": {
@@ -54,7 +54,7 @@
   },
   "wizardSteps": [
     {
-      "label": "Configure HSM Template",
+      "label": "Configure SMS Custom Activity",
       "key": "step1"
     }
   ],
