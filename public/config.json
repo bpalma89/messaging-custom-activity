@@ -20,7 +20,7 @@
     "execute": {
       "inArguments": [{"contactKey":"{{Contact.Key}}"}],
       "outArguments": [{"contactKey":"{{Contact.Key}}"}],
-      "url": "https://testcustomactivity.free.beeceptor.com",
+      "url": "https://testcustomactivity.free.beeceptor.com/execute",
       "verb": "POST",
       "body": "",
       "header": "",
