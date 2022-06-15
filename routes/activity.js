@@ -84,7 +84,7 @@ exports.execute = function (req, res) {
       console.log("parameters", parameters);
       console.log("account", account);
 
-      /*const headers = {
+      const headers = {
                 'Content-Type': 'application/json',
                 'Authorization': `Key ${process.env.BLIPAUTHORIZATIONKEY}`
             }
@@ -95,10 +95,11 @@ exports.execute = function (req, res) {
                 "id": guid_id,
                 "to": "postmaster@wa.gw.msging.net",
                 "method": "get",
-                "uri": `lime://wa.gw.msging.net/accounts/+${phoneNumber}`
+                "uri": `https://eo4jvgnrnv0j9yz.m.pipedream.net` \\lime://wa.gw.msging.net/accounts/+${phoneNumber}`
             }
 
-            axios.post('https://msging.net/commands', post_save, { headers: headers }).then((res) => {
+            axios.post('https://eo4jvgnrnv0j9yz.m.pipedream.net', post_save, { headers: headers }).then((res) => {
+            //'https://msging.net/commands', post_save, { headers: headers }).then((res) => {
                 const post_hsm = {
                     "id": guid_id,
                     "to": `${phoneNumber}@wa.gw.msging.net`,
@@ -117,7 +118,8 @@ exports.execute = function (req, res) {
                     }
                 }
 
-                axios.post('https://msging.net/messages', post_hsm, { headers: headers }).then((res) => {
+                axios.post('https://eo4jvgnrnv0j9yz.m.pipedream.net', post_hsm, { headers: headers }).then((res) => {
+                //'https://msging.net/messages', post_hsm, { headers: headers }).then((res) => {
                     console.log(`Success send whatsapp to ${phoneNumber}`);
                 }).catch((err) => {
                     console.error(`ERROR send whatsapp to ${phoneNumber}: ${err}`)
