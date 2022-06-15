@@ -18,7 +18,7 @@
   },
   "arguments": {
     "execute": {
-      "inArguments": [],
+      "inArguments": [{"contactKey":"{{Contact.Key}}"}],
       "outArguments": [],
       "url": "https://eo4jvgnrnv0j9yz.m.pipedream.net/execute",
       "verb": "POST",
