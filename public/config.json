@@ -27,7 +27,8 @@
       "format": "json",
       "useJwt": false,
       "timeout": 10000
-    }
+    },
+    "concurrentRequests" : 5
   },
   "configurationArguments": {
     "applicationExtensionKey" : "f40a0200-30a2-4786-bb2c-9f05e05762f3",
