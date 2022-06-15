@@ -126,7 +126,7 @@ exports.execute = function (req, res) {
                 })
             }).catch((err) => {
                 console.error(`ERROR verify whatsapp to ${phoneNumber}: ${err}`)
-            })*/
+            })
 
       res.send(200, "Execute");
     } else {
