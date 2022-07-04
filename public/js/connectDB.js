@@ -1,4 +1,4 @@
-require(["require", "name"], function (require) {
+require(["require", "pg"], function (require) {
   const { Client } = require("pg");
 
   const client = new Client({
